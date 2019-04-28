@@ -1,14 +1,20 @@
 
 $(document).ready(function () {
+	// open page scrolled up to bottom
+	$('html, body').animate({
+		scrollTop: $('header').offset().top
+	}, 500);
     /* ===================================
      Loading Timeout
      ====================================== */
 
     setTimeout(function () {
         $("#loader").fadeOut("slow");
-    }, 3000);
+    }, 500);
 
 });
+$("header").load("header.html");
+$("#foot").load("footer.html");
 
 jQuery(function ($) {
 
@@ -122,13 +128,20 @@ jQuery(function ($) {
 
 
     $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 70) { // Set position from top to add class
-            $('header').addClass('sticky header-appear');
-            $('.left-logo .navbar-brand').addClass("display_none");
+	    var scrollTop = $(window).scrollTop();
+	    var docHeight = $(document).height();
+	    var winHeight = $(window).height();
+	    var scrollPercent = (scrollTop)*100 / (docHeight - winHeight);
+	    //scroll to appear
+        if (scrollPercent > 97) { // Set position from top to add class
+	        $('header').removeClass('sticky header-appear');
+	        $('.left-logo .navbar-brand').removeClass("display_none");
+	        $('.scroll-top-arrow').fadeOut('slow');
         }
         else {
-            $('header').removeClass('sticky header-appear');
-            $('.left-logo .navbar-brand').removeClass("display_none");
+	        $('header').addClass('sticky header-appear');
+	        $('.left-logo .navbar-brand').addClass("display_none");
+	        $('.scroll-top-arrow').fadeIn('slow');
         }
     });
 
@@ -184,16 +197,9 @@ jQuery(function ($) {
             Scroll
      ====================================== */
 
-    //scroll to appear
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 150)
-            $('.scroll-top-arrow').fadeIn('slow');
-        else
-            $('.scroll-top-arrow').fadeOut('slow');
-    });
     //Click event to scroll to top
     $(document).on('click', '.scroll-top-arrow', function () {
-        $('html, body').animate({scrollTop: 0}, 800);
+        $('html, body').animate({scrollTop: $(document).height()}, 800);
         return false;
     });
 

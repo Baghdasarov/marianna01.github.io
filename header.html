@@ -1,0 +1,75 @@
+<!-- start navigation -->
+<nav class="nav-bar-white navbar navbar-default bootsnav navbar-fixed-top nav-white header-light bg-transparent nav-box-width white-link on no-full nav_line">
+    <div class="container nav-header-container">
+        <div class="row">
+            <div class="col-md-2 col-xs-5">
+                <a href="#home" title="Logo" class="logo scroll"><img src="images/logo-blue-black.png"
+                                                                      class="logo-dark" alt="reone"><img
+                        src="images/logo-red-white.png" alt="reone" class="logo-light default"></a>
+            </div>
+            <!-- end logo -->
+            <div class="col-md-7 col-xs-2 width-auto pull-right accordion-menu no-padding-right hidden-sm hidden-xs">
+                <div class="navbar-collapse collapse pull-right" id="navbar-collapse-toggle-1">
+                    <ul id="accordion" class="nav navbar-nav navbar-left no-margin alt-font text-normal"
+                        data-in="fadeIn" data-out="fadeOut">
+                        <!-- start menu item -->
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Our Products</a>
+                        </li>
+                        <li>
+                            <a href="career.html">Career</a>
+                        </li>
+                        <li>
+                            <a href="blogs.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-5 width-auto sm-width-15 xs-width-20">
+                <div class="header-searchbar">
+                    <a href="#search-header" title="Search" class="header-search-form"><i
+                            class="fa fa-search search-button"></i></a>
+                    <!-- search input-->
+                    <form id="search-header" method="post" action="#." name="search-header"
+                          class="search-form-result mfp-hide">
+                        <div class="search-form position-relative">
+                            <button type="submit" class="fa fa-search close-search search-button"></button>
+                            <input type="text" name="search" class="search-input"
+                                   placeholder="Enter your keywords..." autocomplete="off">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Push Nav Button -->
+    <div id="showMenu" class="showMenuButton-two">
+        <span class="hamburger"></span>
+    </div>
+    <!-- end navigation -->
+</nav>
+<script>
+    $.getScript("js/push_nav.js");
+    var path = window.location.pathname;
+    var page = path.substring(
+	    path.lastIndexOf("/") + 1,
+	    path.lastIndexOf(".")
+    ) + ".html";
+    $("#accordion>li").removeClass("active");
+    $('#accordion>li>a[href="'+page+'"]').parent().addClass("active");
+</script>

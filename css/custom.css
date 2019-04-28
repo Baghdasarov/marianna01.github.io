@@ -1,2 +1,9 @@
-
-/*-- Use For Custom Styling --*/
+.navbar-fixed-top {
+    top: calc(100vh - 60px);
+}
+.showMenuButton-two {
+    top: calc(100vh - 40px);
+}
+.scroll-top-arrow, .scroll-top-arrow:focus {
+    top: 30px;
+}

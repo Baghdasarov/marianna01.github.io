@@ -122,9 +122,9 @@ html, body, .perspective {
 	right: 4%;
 	z-index:99;
 }
-.header-appear .showMenuButton-two{
-	top: 15px;
-}
+/*.header-appear .showMenuButton-two{*/
+/*	top: 15px;*/
+/*}*/
 
 .showMenuButton-two span.hamburger, .showMenuButton-two span.hamburger:after, .showMenuButton-two span.hamburger:before {
 	content: "";
