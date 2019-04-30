@@ -2758,9 +2758,6 @@ color: #82b440;
 .other .header-appear .showMenuButton-two span.hamburger, .other .header-appear .showMenuButton-two span.hamburger:after,.other .header-appear .showMenuButton-two span.hamburger:before {
     background:#0b0b0b;
 }
-.other .showMenuButton-two {
-    top: 15px;
-}
 .other a:hover,.other a:active,.other a:focus {
     color: #17acc6;
     text-decoration: none;
@@ -3642,7 +3639,7 @@ background: url(../images/blog-cover1.jpg );
         min-height: 332px;
     }
     .showMenuButton-two{
-        top: 12px !important;
+        top: calc(100vh - 45px) !important;
     }
     .left-logo .menu_bars{
         top: 10px;
@@ -3796,7 +3793,7 @@ background: url(../images/blog-cover1.jpg );
         display: none;
     }
     .showMenuButton-two{
-        top: 9px !important;
+        top: calc(100vh - 47px) !important;
     }
     .btn.btn-rounded.btn-large {
         padding: 6px 26px;
