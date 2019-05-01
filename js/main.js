@@ -13,8 +13,9 @@ $(document).ready(function () {
     }, 500);
 
 });
-$("header").load("header.html");
-$("#foot").load("footer.html");
+$("header").load("layouts/header.html");
+$("#foot").load("layouts/footer.html");
+$("#hiddenNav").load("layouts/hiddenNav.html");
 
 jQuery(function ($) {
 
