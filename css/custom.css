@@ -1,9 +1,41 @@
 .navbar-fixed-top {
     top: calc(100vh - 60px);
 }
+section {
+    padding: 90px 0;
+    overflow: hidden;
+}
 .showMenuButton-two {
     top: calc(100vh - 40px);
 }
 .scroll-top-arrow, .scroll-top-arrow:focus {
     top: 30px;
+}
+
+/*Colors*/
+.process-wrapp i,
+.address-item i{
+    background: -webkit-linear-gradient(#df2919, #751614);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.process-wrapp li:hover i,
+.address-item i:hover{
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+.text-red-gradient {
+    background: -webkit-linear-gradient(#df2919, #751614);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bg-red-gradient{
+    background-image: linear-gradient(#df2919, #751614);
+}
+#particles-js{
+    background-image: linear-gradient(#df2919, #751614);
+}
+.owl-client .owl-dot.active span{
+    background: #012c57 !important;
 }
