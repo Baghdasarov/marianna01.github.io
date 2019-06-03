@@ -1113,13 +1113,17 @@ Google Font
     background:#cb342b;
     color:#fff;
 }
-.blog-two-block:hover .btn.btn-blue,.blog-two-block:hover .btn.btn-red {
+.blog-two-block:hover .hvr-bg-green{
+    background:#62b73e;
+    color:#fff;
+}
+.blog-two-block:hover .btn.btn-blue,.blog-two-block:hover .btn.btn-red,.blog-two-block:hover .btn.btn-green {
     background: transparent;
     border-color: #fff !important;
     color: #fff !important;
 }
 
-.blog-two-block .btn.btn-blue:hover,.blog-two-block .btn.btn-red:hover{
+.blog-two-block .btn.btn-blue:hover,.blog-two-block .btn.btn-red:hover, .blog-two-block .btn.btn-green:hover{
     background:#fff !important;
     border-color: #fff !important;
     color: #141414 !important;
@@ -2214,20 +2218,20 @@ color: #fff;
     bottom: 15px;
 }
 .food-version .process-wrapp li > .pro-step, .food-version .address i{
-color: #82b440;
+color: #62b73e;
 }
 .food-version .owl-blog-item .owl-nav .owl-next:hover, .food-version  .owl-blog-item .owl-nav .owl-prev:hover {
-    background: #82b440;
-    border: 2px solid #82b440;
+    background: #62b73e;
+    border: 2px solid #62b73e;
 }
 .food-version .play-hvr:hover {
-    border: 4px solid #82b440;
+    border: 4px solid #62b73e;
 }
 .food-version .play-icon{
-    background:#82b440;
+    background:#62b73e;
 }
 .food-version .btn.btn-rounded.btn-blog:hover,.food-version .btn.btn-rounded.btn-blog:focus {
-    background:#82b440 !important;
+    background:#62b73e !important;
     border: 2px solid transparent;
     color: #fff;
 }
@@ -2243,7 +2247,7 @@ color: #82b440;
     background: #fff;
 }
 .food-version .owl-client .owl-dot.active span {
-    background: #82b440 !important;
+    background: #62b73e !important;
 }
 .food-version .header-social-icon{
     display: block !important;
@@ -2265,7 +2269,7 @@ color: #82b440;
     -o-transition-duration: .4s;
 }
 .food-version .header-social-icon a:hover{
-    background: #82b440;
+    background: #62b73e;
 }
 
 .food-version .menu_bars{
@@ -2275,7 +2279,7 @@ color: #82b440;
     top: 9px;
 }
 .food-version .blog-two-block:hover .hvr-bg-blue{
-    background: #82b440;
+    background: #62b73e;
 }
 .food-version .blog-two-block:hover .btn.btn-green,.food-version .blog-two-block:hover .btn.btn-red {
     background: transparent !important;
@@ -2294,7 +2298,7 @@ color: #82b440;
     line-height: 34px;
 }
 .food-version .pushmenu {
-    border-top: 3px solid #82b440;
+    border-top: 3px solid #62b73e;
 }
 .food-version .testimonial-two-bg{
     height: 300px;
@@ -3094,40 +3098,15 @@ background: #232323;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 50px;
-    height: 10px;
+    width: 90px;
+    height: auto;
     z-index: 99999;
-    background:#17acc6;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-animation: load 1.8s ease-in-out infinite;
-    animation: load 1.8s ease-in-out infinite;
 }
 
 .loader:before, .loader:after {
     position: absolute;
     display: block;
     content: "";
-    -webkit-animation: load 1.8s ease-in-out infinite;
-    animation: load 1.8s ease-in-out infinite;
-    height: 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.loader:before {
-    top: -20px;
-    left: 10px;
-    width: 40px;
-    background: #EF4836;
-}
-
-.loader:after {
-    bottom: -20px;
-    width: 35px;
-    background: #F5AB35;
 }
 
 @-webkit-keyframes load {
