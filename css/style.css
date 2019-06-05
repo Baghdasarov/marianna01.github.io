@@ -138,7 +138,7 @@ Google Font
 
 .feature-bg-img {
     left: 0;
-    background: url(../images/feature-two-img.jpg);
+    background: url(../images/about-us.png);
     position: relative;
     z-index: 1;
     top: 0;
@@ -538,7 +538,7 @@ Google Font
     -o-transition: all .3s ease;
     transition: all .3s ease;
     z-index: 1;
-    background-color: rgba(0, 168, 197, 0.66);
+    background-color: rgba(98, 183, 62, 0.66);
 }
 
 .work-overlay > .plus {
