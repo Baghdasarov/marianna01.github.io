@@ -81,3 +81,7 @@ section {
 .owl-client .owl-dot.active span{
     background: #62b73e !important;
 }
+#foot{
+    border-bottom: 3px solid rgb(203, 52, 43);
+    background-color: #214b5d;
+}
