@@ -2763,7 +2763,7 @@ color: #62b73e;
     background:#0b0b0b;
 }
 .other a:hover,.other a:active,.other a:focus {
-    color: #17acc6;
+    color: rgb(98, 183, 62);
     text-decoration: none;
 }
 
@@ -2839,7 +2839,7 @@ color: #62b73e;
 }
 .tag-cloud a:hover {
     color:#fff;
-    background: #17acc6;
+    background: rgb(98, 183, 62);
 }
 .blog-pagination a{
     width: 40px;
@@ -2858,8 +2858,8 @@ color: #62b73e;
 }
 .blog-pagination a.active{
     color: #fff;
-    background:#17acc6;
-    border: 1px solid #17acc6;
+    background: rgb(98, 183, 62);
+    border: 1px solid rgb(98, 183, 62);
 }
 .no-border{
     border: 0px !important;
@@ -3074,7 +3074,7 @@ background: #232323;
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
     transform: scaleX(0);
-    background: #17acc6 !important;
+    background: rgb(98, 183, 62) !important;
     visibility: hidden;
     opacity: 0;
 }
@@ -3154,7 +3154,7 @@ background: #232323;
     border-bottom-left-radius: 4px;
     opacity: .9;
     background-color: #fff;
-    color: #0092c7;
+    color: rgb(98, 183, 62);
     text-align: center;
     cursor: pointer;
     z-index: 999;
@@ -3217,7 +3217,7 @@ height: 100%;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background-color: #0092c7;
+    background-color: rgb(98, 183, 62);
 }
 .demo-item{
     position: relative;
@@ -3255,8 +3255,8 @@ height: 100%;
     letter-spacing: 0.6px;
 }
 .filtering-demo span.active{
-    background-color: #0092c7;
-    border: 1px solid #0092c7;
+    background-color: rgb(98, 183, 62);
+    border: 1px solid rgb(98, 183, 62);
 }
 /* revolution */
 
@@ -3501,7 +3501,7 @@ height: 100%;
     transition: .2s !important;
 }
 .btn-slider-btn-hvr-blue:hover{
-    background: #0092c7 !important;
+    background: rgb(98, 183, 62) !important;
     color: #fff !important;
     transition: .2s !important;
 }
@@ -3513,7 +3513,7 @@ height: 100%;
     background: #EF4836 !important;
 }
 .rs-addon-beforeafter-horizontal .rs-addon-beforeafter-after{
-    background: #0092c7 !important;
+    background: rgb(98, 183, 62) !important;
 }
 button.mfp-close, button.mfp-arrow{
     margin: 5px 5px;
