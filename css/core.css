@@ -98,8 +98,8 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px;list-style-type: n
 .bg-very-light-gray {background-color: #f8f8f8 }
 .bg-yellow {background-color: #ffb426;}
 .bg-new-yellow {background-color: #e3de00;}
-.bg-blue {background-color: #17acc6;}
-.bg-lg-blue {background-color: #00e4ce;}
+.bg-blue {background-color: #214b5d;}
+.bg-lg-blue {background-color: #5ca9ca;}
 .bg-green {background-color: #62b73e;}
 .bg-red{background-color:#CB342B;}
 .bg-dark-blue{background: #012c57
@@ -230,6 +230,7 @@ section.half-section {padding:80px 0;}
 /*icon  bg bover */
 .facebook-bg-hvr:hover{background:#4267B2 !important;color: #fff !important;border: 1px solid #4267B2 !important;}
 .twitter-bg-hvr:hover{background:#1DA1F2 !important;color: #fff !important;border: 1px solid #1DA1F2 !important;}
+.skype-bg-hvr:hover{background:#00AFF0 !important;color: #fff !important;border: 1px solid #00AFF0 !important;}
 .instagram-bg-hvr:hover{background:#C32AA3 !important;color: #fff !important;border: 1px solid #C32AA3 !important;}
 .linkedin-bg-hvr:hover{background:#0077B5 !important;color: #fff !important;border: 1px solid #0077B5 !important;}
 .pinterest-bg-hvr:hover{background:#BD081C !important;color: #fff !important;border: 1px solid #BD081C !important;}
@@ -238,6 +239,7 @@ section.half-section {padding:80px 0;}
 /*icon text bover */
 .facebook-text-hvr:hover{color:#4267B2 !important;}
 .twitter-text-hvr:hover{color:#1DA1F2 !important;}
+.skype-text-hvr:hover{color:#00AFF0 !important;}
 .instagram-text-hvr:hover{color:#C32AA3 !important;}
 .linkedin-text-hvr:hover{color:#0077B5 !important;}
 .pinterest-text-hvr:hover{color:#BD081C !important;}
