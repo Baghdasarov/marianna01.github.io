@@ -18,7 +18,7 @@ header a.logo img {
     max-width: 130px;
 }
 section {
-    padding: 90px 0;
+    padding: 80px 0;
     overflow: hidden;
 }
 .border-bottom{ border-bottom: 1px solid lightgray;}
@@ -149,4 +149,26 @@ section {
 #foot{
     border-bottom: 3px solid rgb(203, 52, 43);
     background-color: #214b5d;
+}
+@media (max-width: 1024px){
+    .navbar-fixed-top {
+        top: calc(100vh - 54px);
+    }
+}
+@media (max-width: 768px){
+
+}
+
+@media screen and (max-width: 768px) {
+    .showMenuButton-two {
+        top: calc(100vh - 44px) !important;
+    }
+    #particles-js {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .showMenuButton-two {
+        top: calc(100vh - 42px) !important;
+    }
 }
