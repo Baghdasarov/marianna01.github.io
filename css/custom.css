@@ -10,6 +10,16 @@ a:hover, a:active {
 .nav_line li a:before{
     background: rgb(203, 52, 43) !important;
 }
+
+header nav.navbar .navbar-nav > li > a:hover, nav.navbar.bootsnav ul.nav > li > a:hover, .header-search-form:hover{
+
+    color: rgb(203, 52, 43);
+    -webkit-transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+    -o-transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+
 /*header nav.navbar.white-link .navbar-nav > li.active > a, nav.navbar.bootsnav.white-link ul.nav > li.active > a, header nav.navbar.bootsnav ul.nav.white-link > li.active > a, header.header-appear nav.header-dark-transparent .navbar-nav > li.active > a, header.header-appear nav.header-dark .navbar-nav > li.active > a, header.sticky nav.header-dark .navbar-nav > li.active > a, header.sticky nav.header-dark-transparent .navbar-nav > li.active > a, header.sticky nav.navbar.bootsnav.header-dark-transparent.white-link .navbar-nav > li.active > a { color: rgb(203, 52, 43);background: transparent;}*/
 header.header-appear nav.header-light,header.sticky nav.navbar-fixed-top.header-light,header.sticky nav.navbar-scroll-fixed-top.header-light {
     border-top: 3px solid rgb(203, 52, 43);
@@ -44,6 +54,14 @@ section {
 }
 .service-cover{
     background: url(../images/cover-service.jpg) center;
+    background-size: cover;
+}
+.service-background{
+    background: url(../images/service-background.png) center;
+    background-size: cover;
+}
+.service-background-2{
+    background: url(../images/service-background-2.png) center;
     background-size: cover;
 }
 .project-cover{

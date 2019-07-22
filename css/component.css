@@ -243,9 +243,9 @@ html, body, .perspective {
 	backface-visibility: hidden;
 }
 
-.icon-home::before { content: "\f015" }
-.icon-features::before { content: "\f013" }
+.icon-home::before { cont.modalview .outer-nav.rightent: "\f015" }
 .icon-about::before { content: "\f007" }
+.icon-services::before { content: "\f013" }
 .icon-work::before { content: "\f164" }
 .icon-pricing::before { content: "\f02c" }
 .icon-blog::before { content: "\f02e" }
@@ -749,7 +749,7 @@ html, body, .perspective {
 	}
 	.modalview .outer-nav.right{
 		right: auto;
-		left: 50%;
+		left: 40%;
 	}
 }
 
