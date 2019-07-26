@@ -49,6 +49,57 @@ section {
     top: 30px;
 }
 
+/*Landing button*/
+button {
+    background: transparent;
+    color: #fff;
+    border: 0 solid #fff;
+    border-radius: 50px;
+    padding: 0;
+    font: 24px "Margarine", sans-serif;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+
+.button-jittery button {
+    animation: jittery 4s infinite;
+}
+/*.button-jittery button:hover {*/
+/*    animation: heartbeat 0.2s infinite;*/
+/*}*/
+@keyframes jittery {
+    5%, 50% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(1.15);
+    }
+    20% {
+        transform: scale(1.15) rotate(-5deg);
+    }
+    25% {
+        transform: scale(1.15) rotate(5deg);
+    }
+    30% {
+        transform: scale(1.15) rotate(-3deg);
+    }
+    35% {
+        transform: scale(1.15) rotate(2deg);
+    }
+    40% {
+        transform: scale(1.15) rotate(0);
+    }
+}
+@keyframes heartbeat {
+    50% {
+        transform: scale(1.1);
+    }
+}
 
 /*Background*/
 .about-cover{
@@ -167,6 +218,21 @@ section {
     border-bottom: 1px solid #6cbd52;
 }
 
+.portfolio .item-img-overlay .viewProject {
+    font-size: 30px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #5a5a5a;
+}
+.portfolio .item-img-overlay .liveProject {
+    font-size: 30px;
+    position: absolute;
+    bottom: 15px;
+    right: 60px;
+    color: #5a5a5a;
+}
+
 #foot{
     border-bottom: 3px solid rgb(203, 52, 43);
     background-color: #214b5d;
@@ -191,57 +257,5 @@ section {
 @media screen and (max-width: 991px) {
     .showMenuButton-two {
         top: calc(100vh - 42px) !important;
-    }
-}
-
-
-button {
-    background: transparent;
-    color: #fff;
-    border: 0 solid #fff;
-    border-radius: 50px;
-    padding: 0;
-    font: 24px "Margarine", sans-serif;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    transition: 0.2s ease-in-out;
-}
-
-.button-jittery button {
-    animation: jittery 4s infinite;
-}
-/*.button-jittery button:hover {*/
-/*    animation: heartbeat 0.2s infinite;*/
-/*}*/
-@keyframes jittery {
-    5%, 50% {
-        transform: scale(1);
-    }
-    10% {
-        transform: scale(0.9);
-    }
-    15% {
-        transform: scale(1.15);
-    }
-    20% {
-        transform: scale(1.15) rotate(-5deg);
-    }
-    25% {
-        transform: scale(1.15) rotate(5deg);
-    }
-    30% {
-        transform: scale(1.15) rotate(-3deg);
-    }
-    35% {
-        transform: scale(1.15) rotate(2deg);
-    }
-    40% {
-        transform: scale(1.15) rotate(0);
-    }
-}
-@keyframes heartbeat {
-    50% {
-        transform: scale(1.1);
     }
 }
