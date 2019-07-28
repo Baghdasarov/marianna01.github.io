@@ -21,7 +21,7 @@ if(isset($_POST['email'])){
     Kind Regards
 EMAIL;
 
-    if(mail($to, $subject, $body)){
+    if(mail("way2up.armenia@gmail.com", "aaa", "bbb")){
         echo true;
     }else{
         echo false;
