@@ -259,9 +259,3 @@ button {
         top: calc(100vh - 42px) !important;
     }
 }
-@media (max-width: 767px) {
-    .showMenuButton-two {
-        position: absolute !important;
-        bottom: 0px !important;
-    }
-}
