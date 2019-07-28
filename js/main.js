@@ -126,12 +126,12 @@ jQuery(function ($) {
 	    var scrollPercent = (scrollTop)*100 / (docHeight - winHeight);
 	    //scroll to appear
         if (scrollPercent > 97) { // Set position from top to add class
-	        $('header').removeClass('sticky header-appear');
+	        $('header').removeClass('header-appear');
 	        $('.left-logo .navbar-brand').removeClass("display_none");
 	        $('.scroll-top-arrow').fadeOut('slow');
         }
         else {
-	        $('header').addClass('sticky header-appear');
+	        $('header').addClass('header-appear');
 	        $('.left-logo .navbar-brand').addClass("display_none");
 	        $('.scroll-top-arrow').fadeIn('slow');
         }
