@@ -1,7 +1,7 @@
-$(document).ready(function () {
+$(document).on("load", function () {
     // open page scrolled up to bottom
     $('html, body').animate({
-        scrollTop: $('header').offset().top
+        scrollTop: $(document).height()
     }, 500);
     /* ===================================
      Loading Timeout
