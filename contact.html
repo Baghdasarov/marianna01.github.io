@@ -82,16 +82,16 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="contact-form">
-                                <form class="margin-50px-bottom">
+                                <form id="contact-form" class="margin-50px-bottom">
                                     <div class="col-xs-12 no-padding">
-                                        <input type="text" class="form-control margin-25px-bottom" placeholder="Your Name">
+                                        <input type="text" id="name" class="form-control margin-25px-bottom" placeholder="Your Name" required>
                                     </div>
                                     <div class="col-xs-12 no-padding">
-                                        <input type="email" class="form-control margin-25px-bottom" placeholder="Your Email">
+                                        <input type="email" id="email" class="form-control margin-25px-bottom" placeholder="Your Email" required>
                                     </div>
 
                                     <div class="col-xs-12 no-padding">
-                                        <textarea class="form-control margin-50px-bottom" placeholder="Your Message"></textarea>
+                                        <textarea id="text" class="form-control margin-50px-bottom" placeholder="Your Message" required></textarea>
                                     </div>
                                     <a href="#" class="btn btn-rounded btn-green float-right btn-large">Get Started Now</a>
                                 </form>

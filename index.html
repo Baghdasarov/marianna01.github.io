@@ -69,19 +69,18 @@
                                             <hr class="seperator-one">
                                         </div>
                                     </div>
-                                    <form class="margin-50px-bottom">
+                                    <form id="contact-form" class="margin-50px-bottom">
                                         <div class="col-xs-6">
-                                            <input type="text" class="form-control margin-30px-bottom" placeholder="Your Name">
+                                            <input type="text" id="name" class="form-control margin-30px-bottom" placeholder="Your Name" required>
                                         </div>
                                         <div class="col-xs-6">
-                                            <input type="email" class="form-control margin-30px-bottom" placeholder="Your Email">
+                                            <input type="email" id="email" class="form-control margin-30px-bottom" placeholder="Your Email" required>
                                         </div>
 
                                         <div class="col-xs-12">
-                                            <textarea class="form-control margin-50px-bottom"
-                                                      placeholder="Your Message"></textarea>
+                                            <textarea class="form-control margin-50px-bottom" id="text" placeholder="Your Message" required></textarea>
                                         </div>
-                                        <a href="#" class="btn btn-rounded btn-red btn-large margin-15px-lr">Get Started Now</a>
+                                        <button type="submit" class="btn btn-rounded btn-red btn-large margin-15px-lr">Get Started Now</button>
                                     </form>
                                     <div class="address bg-light-gray padding-20px-all xs-margin-50px-bottom">
                                         <div class="address-item">
