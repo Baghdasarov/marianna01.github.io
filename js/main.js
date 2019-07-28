@@ -1,12 +1,20 @@
+$(document).ready(function () {
+    // open page scrolled up to bottom
+    $('html, body').animate({
+        scrollTop: $('header').offset().top
+    }, 500);
+    /* ===================================
+     Loading Timeout
+     ====================================== */
+
+    setTimeout(function () {
+        $("#loader").fadeOut("slow");
+    }, 500);
+
+});
 $("header").load("layouts/header.html");
 $("#foot").load("layouts/footer.html");
 $("#hiddenNav").load("layouts/hiddenNav.html");
-$(window).on("load", function () {
-    $("#loader").fadeOut("fast");
-	$('html, body').animate({
-        scrollTop: $(document).height()
-	}, 500);
-});
 
 jQuery(function ($) {
 
