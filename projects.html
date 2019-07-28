@@ -87,7 +87,7 @@
                         <!-- filter links -->
                         <div class="filtering col-sm-12 text-center">
                             <span class="btn btn-transparent-red btn-rounded active" data-filter="*">All</span>
-                            <span class="btn btn-transparent-red btn-rounded" data-filter=".ownProjects">Own Projects</span>
+                            <span class="btn btn-transparent-red btn-rounded" id="own" data-filter=".ownProjects">Own Projects</span>
                             <span class="btn btn-transparent-red btn-rounded" data-filter=".managingSolutions">Managing Solutions</span>
                             <span class="btn btn-transparent-red btn-rounded" data-filter=".bestDesign">Best Design</span>
                         </div>
@@ -303,5 +303,26 @@
 <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
 <!-- setting -->
 <script src="js/main.js"></script>
+<script>
+    $(document).ready(function() {
+	    var getUrlParameter = function getUrlParameter(sParam) {
+		    var sPageURL = window.location.search.substring(1),
+			    sURLVariables = sPageURL.split('&'),
+			    sParameterName,
+			    i;
+
+		    for (i = 0; i < sURLVariables.length; i++) {
+			    sParameterName = sURLVariables[i].split('=');
+
+			    if (sParameterName[0] === sParam) {
+				    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+			    }
+		    }
+	    };
+	    if (getUrlParameter('type') === "own") {
+		    $("#own").click();
+	    }
+    })
+</script>
 </body>
 </html>
