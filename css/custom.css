@@ -254,8 +254,3 @@ button {
         height: 400px;
     }
 }
-@media screen and (max-width: 991px) {
-    .showMenuButton-two {
-        top: calc(100vh - 42px) !important;
-    }
-}
