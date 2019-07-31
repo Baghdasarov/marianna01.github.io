@@ -17,6 +17,9 @@ nav.navbar.navbar-default ul.nav > li > a {
     bottom: 15px;
     background: rgb(203, 52, 43) !important;
 }
+.outer-nav a {
+    font-weight: 500;
+}
 
 header nav.navbar .navbar-nav > li > a:hover, nav.navbar.bootsnav ul.nav > li > a:hover, .header-search-form:hover{
 
@@ -25,7 +28,6 @@ header nav.navbar .navbar-nav > li > a:hover, nav.navbar.bootsnav ul.nav > li > 
     -o-transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
     transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
 }
-
 
 /*header nav.navbar.white-link .navbar-nav > li.active > a, nav.navbar.bootsnav.white-link ul.nav > li.active > a, header nav.navbar.bootsnav ul.nav.white-link > li.active > a, header.header-appear nav.header-dark-transparent .navbar-nav > li.active > a, header.header-appear nav.header-dark .navbar-nav > li.active > a, header.sticky nav.header-dark .navbar-nav > li.active > a, header.sticky nav.header-dark-transparent .navbar-nav > li.active > a, header.sticky nav.navbar.bootsnav.header-dark-transparent.white-link .navbar-nav > li.active > a { color: rgb(203, 52, 43);background: transparent;}*/
 header.header-appear nav.header-light,header.sticky nav.navbar-fixed-top.header-light,header.sticky nav.navbar-scroll-fixed-top.header-light {
@@ -244,6 +246,9 @@ button {
 #foot{
     /*border-bottom: 3px solid rgb(203, 52, 43);*/
     background-color: #214b5d;
+}
+.footer-nav a {
+    margin-right: 10px;
 }
 @media (max-width: 1024px){
     .navbar-fixed-top {
