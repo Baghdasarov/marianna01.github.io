@@ -242,7 +242,14 @@ button {
     right: 60px;
     color: #5a5a5a;
 }
-
+.red-list li::before {
+    content: "\2022";
+    color: #751614;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
 #foot{
     /*border-bottom: 3px solid rgb(203, 52, 43);*/
     background-color: #214b5d;

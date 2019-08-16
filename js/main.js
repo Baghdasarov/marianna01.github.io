@@ -11,6 +11,28 @@ $(document).ready(function () {
         $("#loader").fadeOut("slow");
     }, 500);
 
+    // $('body').bind('mousewheel', function(e){
+    //     console.log(e.originalEvent);
+    //     if (e.originalEvent.wheelDelta /120 > 0) {
+    //         console.log('scrolling up !');
+    //     } else {
+    //         console.log('scrolling down !');
+    //         if ($(window).scrollTop() + $(window).height() === $(document).height()) {
+    //             console.log($(document).height() - 50);
+    //             $('html, body').animate({
+    //                 scrollTop: $(document).height() - 50
+    //             }, 1);
+    //         }
+    //     }
+    // });
+    $(window).scroll(function(){
+        console.log($(window).scrollTop() + $(window).height());
+        console.log($(document).height());
+        if($(window).scrollTop() + $(window).height() === $(document).height()) {
+            console.log("bottom!");
+        }
+    });
+
 });
 $("header").load("layouts/header.html");
 $("#foot").load("layouts/footer.html");
