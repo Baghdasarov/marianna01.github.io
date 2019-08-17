@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(window).on('load', function () {
     // open page scrolled up to bottom
     $('html, body').animate({
         scrollTop: $(document).height()
