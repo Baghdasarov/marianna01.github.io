@@ -35,6 +35,7 @@ $(window).on('load', function () {
 $("header").load("layouts/header.html");
 $("#foot").load("layouts/footer.html");
 $("#hiddenNav").load("layouts/hiddenNav.html");
+// $("#mapContainer").load("map.html");
 
 jQuery(function ($) {
 

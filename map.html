@@ -11,65 +11,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CRaleway:300,600,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.intechnic.com/hs-fs/hub/439788/hub_generated/template_assets/1544240368187/custom/page/intechnic_2017/common.min.css">
+    <link rel="stylesheet" href="css/map/common.min.css">
 
-    <link rel="stylesheet" href="https://www.intechnic.com/hs-fs/hub/439788/hub_generated/template_assets/1553780882103/custom/page/intechnic_2017/main.min.css">
+    <link rel="stylesheet" href="css/map/main.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <style>
+        .way2up{
+            background: transparent !important;
+        }
+        .way2up:before {
+            background-image: url(images/loading.gif);
+            background-size: 26px 17px;
+            display: inline-block;
+            width: 26px;
+            height: 17px;
+            content: "";
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
 </head>
 
-<body class="page-main">
+<body class="page-main" style="max-height: 100vh">
 
-<main class="scroller">
+<div class="scroller">
 
-    <footer class="screen screen--bottom--md-up ui-dark ui-dark-background footer" data-ui="dark" id="footer">
+    <div class="screen screen--bottom--md-up ui-dark ui-dark-background footer" data-ui="dark" id="footer">
         <div class="container container--footer">
 
             <div class="map is-hidden--sm-down">
                 <div class="map__inner js-map">
-                    <img src="https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map.jpg?width=840&amp;height=412&amp;name=map.jpg" alt="" width="840" height="412" class="is-hidden--xl" srcset="https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map.jpg?width=420&amp;height=206&amp;name=map.jpg 420w, https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map.jpg?width=840&amp;height=412&amp;name=map.jpg 840w, https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map.jpg?width=1260&amp;height=618&amp;name=map.jpg 1260w, https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map.jpg?width=1680&amp;height=824&amp;name=map.jpg 1680w, https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map.jpg?width=2100&amp;height=1030&amp;name=map.jpg 2100w, https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map.jpg?width=2520&amp;height=1236&amp;name=map.jpg 2520w" sizes="(max-width: 840px) 100vw, 840px">
-                    <img src="https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map-xl.jpg?width=1680&amp;height=824&amp;name=map-xl.jpg" alt="" width="1680" height="824" class="is-hidden--lg-down" srcset="https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map-xl.jpg?width=840&amp;height=412&amp;name=map-xl.jpg 840w, https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map-xl.jpg?width=1680&amp;height=824&amp;name=map-xl.jpg 1680w, https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map-xl.jpg?width=2520&amp;height=1236&amp;name=map-xl.jpg 2520w, https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map-xl.jpg?width=3360&amp;height=1648&amp;name=map-xl.jpg 3360w, https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map-xl.jpg?width=4200&amp;height=2060&amp;name=map-xl.jpg 4200w, https://www.intechnic.com/hs-fs/hubfs/intechnic_2017/assets/images/landing/footer/map-xl.jpg?width=5040&amp;height=2472&amp;name=map-xl.jpg 5040w" sizes="(max-width: 1680px) 100vw, 1680px">
+                    <img src="images/map/map.jpg" alt="" width="840" height="412" class="is-hidden--xl" srcset="images/map/map.jpg?width=420&amp;height=206&amp;name=map.jpg 420w, images/map/map.jpg?width=840&amp;height=412&amp;name=map.jpg 840w, images/map/map.jpg?width=1260&amp;height=618&amp;name=map.jpg 1260w, images/map/map.jpg?width=1680&amp;height=824&amp;name=map.jpg 1680w, images/map/map.jpg?width=2100&amp;height=1030&amp;name=map.jpg 2100w, images/map/map.jpg?width=2520&amp;height=1236&amp;name=map.jpg 2520w" sizes="(max-width: 840px) 100vw, 840px">
+                    <img src="images/map/map-xl.jpg" alt="" width="1680" height="824" class="is-hidden--lg-down" srcset="images/map/map-xl.jpg?width=840&amp;height=412&amp;name=map-xl.jpg 840w, images/map/map-xl.jpg?width=1680&amp;height=824&amp;name=map-xl.jpg 1680w, images/map/map-xl.jpg?width=2520&amp;height=1236&amp;name=map-xl.jpg 2520w, images/map/map-xl.jpg?width=3360&amp;height=1648&amp;name=map-xl.jpg 3360w, images/map/map-xl.jpg?width=4200&amp;height=2060&amp;name=map-xl.jpg 4200w, images/map/map-xl.jpg?width=5040&amp;height=2472&amp;name=map-xl.jpg 5040w" sizes="(max-width: 1680px) 100vw, 1680px">
 
-                    <div class="js-map-marker map__marker is-active" style="left: 22.5%; top: 41.9%;"></div>
+                    <div class="js-map-marker map__marker is-active" style="left: 16.5%; top: 31.9%;"></div>
                     <div class="js-map-marker map__marker" style="left: 13.9%; top: 45.0%;"></div>
                     <div class="js-map-marker map__marker" style="left: 24.6%; top: 39.3%;"></div>
                     <div class="js-map-marker map__marker" style="left: 46.9%; top: 33.0%;"></div>
-                    <div class="js-map-marker map__marker" style="left: 87.3%; top: 87.6%;"></div>
+                    <div class="js-map-marker map__marker way2up" style="left:59.3%;top:39.6%;"></div>
                 </div>
             </div>
 
-            <div class="footer__address" itemscope itemtype="http://schema.org/Organization">
-                <div class="is-hidden">
-                    <span itemprop="name">Intechnic</span>
-                </div>
+            <div class="footer__address">
+                <!--<div class="is-hidden">-->
+                    <!--<span itemprop="name">Intechnic</span>-->
+                <!--</div>-->
 
                 <ul class="js-accordion">
-                    <li itemprop="location" itemscope itemtype="http://schema.org/Place" class="js-map-text is-active">
-                        <h3 itemprop="name" class="js-accordion-header">Chicago</h3>
+                    <li itemprop="location" class="js-map-text is-active">
+                        <h3 itemprop="name" class="js-accordion-header">Adam Nashman</h3>
                         <div class="js-accordion-content">
                             <div class="footer__address__content">
                                 <p>
-                                    <a href="tel:+1%20(847)%20970-6190" itemprop="telephone">+1 (847) 970-6190</a>
+                                    <a href="https://fax.adecor.com" target="_blank">fax.adecor.com</a>
                                 </p>
-                                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                        <span itemprop="streetAddress">
-                                    Civic Opera Building<br>
-                                    20 N Wacker Dr., Suite 1200
-                                </span>
-                                    <br>
-                                    <span itemprop="addressLocality">Chicago</span>, <span itemprop="addressRegion">IL</span> <span itemprop="postalCode">60606</span>
-                                </p>
+                                <!--<p>-->
+                                    <!--<a href="tel:+1%20(847)%20970-6190" itemprop="telephone">+1 (847) 970-6190</a>-->
+                                <!--</p>-->
+                                <!--<p itemprop="address">-->
+                                        <!--<span itemprop="streetAddress">-->
+                                        <!--Civic Opera Building<br>-->
+                                        <!--20 N Wacker Dr., Suite 1200-->
+                                    <!--</span>-->
+                                    <!--<br>-->
+                                    <!--<span itemprop="addressLocality">Chicago</span>, <span itemprop="addressRegion">IL</span> <span itemprop="postalCode">60606</span>-->
+                                <!--</p>-->
                             </div>
                         </div>
                     </li>
-                    <li itemprop="location" itemscope itemtype="http://schema.org/Place" class="js-map-text">
+                    <li itemprop="location" class="js-map-text">
                         <h3 itemprop="name" class="js-accordion-header">Los Angeles</h3>
                         <div class="js-accordion-content">
                             <div class="footer__address__content">
                                 <p>
                                     <a href="tel:+1%20(213)%20816-0900" itemprop="telephone">+1 (213) 816-0900</a>
                                 </p>
-                                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <p itemprop="address">
                                     <span itemprop="streetAddress">2500 Broadway</span>
                                     <br> Building F, Suite F-125
                                     <br>
@@ -79,14 +98,14 @@
                             </div>
                         </div>
                     </li>
-                    <li itemprop="location" itemscope itemtype="http://schema.org/Place" class="js-map-text">
+                    <li itemprop="location" class="js-map-text">
                         <h3 itemprop="name" class="js-accordion-header">Toronto</h3>
                         <div class="js-accordion-content">
                             <div class="footer__address__content">
                                 <p>
                                     <a href="tel:+1%20647%20476-2253" itemprop="telephone">+1 (647) 476-2253</a>
                                 </p>
-                                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <p itemprop="address">
                                     <span itemprop="streetAddress">One Dundas Street West</span>
                                     <br> Suite 2500
                                     <br>
@@ -96,20 +115,20 @@
                             </div>
                         </div>
                     </li>
-                    <li itemprop="location" itemscope itemtype="http://schema.org/Place" class="js-map-text">
+                    <li itemprop="location" class="js-map-text">
                         <h3 itemprop="name" class="js-accordion-header">London</h3>
                         <div class="js-accordion-content">
                             <div class="footer__address__content">
                                 <p>
                                     <a href="tel:+44%20(20)%203677-5599" itemprop="telephone">+44 (20) 3677-5599</a>
                                 </p>
-                                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <p itemprop="address">
                                     16th Floor
                                     <br>
                                     <span itemprop="streetAddress">
-                                    Portland House<br>
-                                    Bressenden Place
-                                </span>
+                                        Portland House<br>
+                                        Bressenden Place
+                                    </span>
                                     <br>
                                     <span itemprop="addressLocality">London</span>, <span itemprop="postalCode">SW1E 5RS</span>
                                     <span class="is-hidden" itemprop="addressCountry">United Kingdom</span>
@@ -117,21 +136,24 @@
                             </div>
                         </div>
                     </li>
-                    <li itemprop="location" itemscope itemtype="http://schema.org/Place" class="js-map-text">
-                        <h3 itemprop="name" class="js-accordion-header">Melbourne</h3>
+                    <li itemprop="location" class="js-map-text">
+                        <h3 itemprop="name" class="js-accordion-header">Way2Up (self projects)</h3>
                         <div class="js-accordion-content">
                             <div class="footer__address__content">
-                                <p>
-                                    <a href="tel:+61%20(3)%209021-2284" itemprop="telephone">+61 (3) 9021-2284</a>
+                                <p style="margin-bottom: 0">
+                                    <a href="https://happylist.in/" target="_blank">happylist.in</a>
                                 </p>
-                                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                    Level 31 and 50
-                                    <br>
-                                    <span itemprop="streetAddress">120 Collins Street</span>
-                                    <br>
-                                    <span itemprop="addressLocality">Melbourne</span>, <span itemprop="addressRegion">VIC</span> <span itemprop="postalCode">3000</span>
-                                    <span class="is-hidden" itemprop="addressCountry">Australia</span>
+                                <p style="margin-top: 0">
+                                    <a href="http://poghosyan.me/" target="_blank">poghosyan.me</a>
                                 </p>
+                                <!--<p itemprop="address">-->
+                                    <!--Level 31 and 50-->
+                                    <!--<br>-->
+                                    <!--<span itemprop="streetAddress">120 Collins Street</span>-->
+                                    <!--<br>-->
+                                    <!--<span itemprop="addressLocality">Melbourne</span>, <span itemprop="addressRegion">VIC</span> <span itemprop="postalCode">3000</span>-->
+                                    <!--<span class="is-hidden" itemprop="addressCountry">Australia</span>-->
+                                <!--</p>-->
                             </div>
                         </div>
                     </li>
@@ -140,13 +162,13 @@
 
         </div>
 
-    </footer>
+    </div>
 
-</main>
+</div>
 
-<script src="https://www.intechnic.com/hs-fs/hub/439788/hub_generated/template_assets/1544240368168/custom/page/intechnic_2017/jquery.min.js"></script>
-<script src="https://www.intechnic.com/hs-fs/hub/439788/hub_generated/template_assets/1553526903162/custom/page/intechnic_2017/shared.js"></script>
-<script src="https://www.intechnic.com/hs-fs/hub/439788/hub_generated/template_assets/1544240368171/custom/page/intechnic_2017/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/map/shared.js"></script>
+<script src="js/map/main.js"></script>
 
 </body>
 
