@@ -26,8 +26,6 @@ $(window).on('load', function () {
     //     }
     // });
     $(window).scroll(function(){
-        console.log($(window).scrollTop() + $(window).height());
-        console.log($(document).height());
         if($(window).scrollTop() + $(window).height() === $(document).height()) {
             console.log("bottom!");
         }

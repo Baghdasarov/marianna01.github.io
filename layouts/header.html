@@ -29,9 +29,9 @@
                         <li>
                             <a href="projects.html?type=own">Our Products</a>
                         </li>
-<!--                        <li>-->
-<!--                            <a href="career.html">Career</a>-->
-<!--                        </li>-->
+                        <li>
+                            <a href="career.html">Career</a>
+                        </li>
 <!--                        <li>-->
 <!--                            <a href="blogs.html">Blog</a>-->
 <!--                        </li>-->
@@ -68,9 +68,10 @@
     $.getScript("js/push_nav.js");
     var path = window.location.pathname;
     var page = path.substring(
-	    path.lastIndexOf("/") + 1,
-	    path.lastIndexOf(".")
+        path.lastIndexOf("/") + 1,
+        path.lastIndexOf(".")
     ) + ".html";
     $("#accordion>li").removeClass("active");
+    page = window.location.search === '?type=own' ? 'projects.html?type=own' : page;
     $('#accordion>li>a[href="'+page+'"]').parent().addClass("active");
 </script>
