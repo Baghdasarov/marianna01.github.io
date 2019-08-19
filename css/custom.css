@@ -233,14 +233,15 @@ button {
     position: absolute;
     bottom: 15px;
     right: 15px;
-    color: #5a5a5a;
 }
 .portfolio .item-img-overlay .liveProject {
     font-size: 30px;
     position: absolute;
     bottom: 15px;
     right: 60px;
-    color: #5a5a5a;
+}
+.portfolio .item-img-overlay .description {
+    right: 95px;
 }
 .red-list li::before {
     content: "\2022";

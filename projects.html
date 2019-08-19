@@ -46,7 +46,11 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/custom.css"/>
 
-
+    <style>
+        #description {
+            line-height: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -109,6 +113,9 @@
                                             <h6 class="margin-5px-bottom">Fax Adecor</h6>
                                             <p>Some words about project</p>
                                         </div>
+                                        <a href="javascript:" data-client="fax" class="description">
+                                            <i class="fa fa-commenting"></i>
+                                        </a>
                                         <a href="https://fax.adecor.com" target="_blank" class="liveProject">
                                             <i class="fa fa-link portfolio-icon"></i>
                                         </a>
@@ -128,6 +135,9 @@
                                             <h6 class="margin-5px-bottom">Chatbot</h6>
                                             <p>Some words about project</p>
                                         </div>
+                                        <a href="javascript:" data-client="booking" class="description">
+                                            <i class="fa fa-commenting"></i>
+                                        </a>
                                         <a href="http://chatbotportfolion.000webhostapp.com/login" target="_blank" class="liveProject">
                                             <i class="fa fa-link portfolio-icon"></i>
                                         </a>
@@ -166,6 +176,9 @@
                                             <h6 class="margin-5px-bottom">CsGo Frog</h6>
                                             <p>Some words about project</p>
                                         </div>
+                                        <a href="javascript:" data-client="csgo" class="description">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                        </a>
                                         <a href="https://csgofrog.com/" target="_blank" class="liveProject">
                                             <i class="fa fa-link portfolio-icon"></i>
                                         </a>
@@ -185,6 +198,9 @@
                                             <h6 class="margin-5px-bottom">A Lewis Structure</h6>
                                             <p>See Our Amazing Work</p>
                                         </div>
+                                        <a href="javascript:" data-client="edukit" class="description">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                        </a>
                                         <a href="http://chemicallewis.000webhostapp.com/" target="_blank" class="liveProject">
                                             <i class="fa fa-link portfolio-icon"></i>
                                         </a>
@@ -223,6 +239,9 @@
                                             <h6 class="margin-5px-bottom">Guard System</h6>
                                             <p>Some words about project</p>
                                         </div>
+                                        <a href="javascript:" data-client="guard" class="description">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>
+                                        </a>
                                         <a href="http://iotsecure.xyz" target="_blank" class="liveProject">
                                             <i class="fa fa-link portfolio-icon"></i>
                                         </a>
@@ -268,6 +287,23 @@
     </div>
     <!-- Push Nav Link -->
     <ul id="hiddenNav" class="navbar outer-nav right vertical alt-font"></ul>
+
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <a href="" target="_blank" class="modal-title h4" id="url"></a>
+                </div>
+                <div class="modal-body">
+                    <p class="no-margin-top no-margin-bottom font-weight-400 text-medium-gray">Company: <span id="company"></span></p>
+                    <p class="no-margin-top no-margin-bottom font-weight-400 text-medium-gray">Contact Person: <span id="contactPerson"></span></p>
+                    <p class="no-margin-top no-margin-bottom font-weight-400 text-medium-gray">Place: <span id="place"></span></p>
+                    <p class="no-margin-bottom font-weight-400 text-medium-gray" id="description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- javascript libraries -->
@@ -330,28 +366,73 @@
 	    if (getUrlParameter('type') === "own") {
 		    $("#own").click();
 	    }
-    })
-</script>
-<script>
-	// function iframeLoaded() {
-	// 	setTimeout(iResize, 50);
-	// 	// Safari and Opera need a kick-start.
-	// 	var iSource = document.getElementById('iframe').src;
-	// 	document.getElementById('iframe').src = '';
-	// 	document.getElementById('iframe').src = iSource;
-	// }
-	// $('#iframe').load(function() {
-	// 	this.style.height =
-    //     this.contentWindow.document.body.offsetHeight + 'px';
-	// });
-	// $('iframe').on('load', function() {
-	// 	this.style.height =
-    //     this.contentWindow.document.body.offsetHeight + 'px';
-	// });
-	// function iResize() {
-	// 	// document.getElementById('iframe').style.height =
-    //     // document.getElementById('iframe').contentWindow.document.body.offsetHeight + 'px';
-	// }
+    });
+    $(".description").click(function() {
+	    var project = projects[this.dataset.client];
+	    $("#url").text(project.url).attr('href', project.url1);
+	    $("#company").text(project.company);
+	    $("#contactPerson").text(project.client+", "+project.position);
+	    $("#place").text(project.country+", "+project.city);
+	    $("#description").text(project.description);
+	    $('.modal').modal('show');
+    });
+    var projects = {
+    	fax: {
+    		client: "Adam Nashman",
+            company: "Adecor",
+            position: "Founder",
+            country: "Canada",
+            city: "Edmonton",
+            url: "fax.adecor.com",
+            url1: "https://fax.adecor.com",
+            feedback: "I had a lot of requirements and Way2Up Team respected them all! Need text.",
+            description: "Using this website can solve problem of receiving and sending faxes without having fax-machine. Bussineces can create their own relations betwen managers (the ones, who can manage fax-numbers, email addresses for notifications about faxes, private storages for saving all faxes, create accounts for their employees) and users (ones, who will manage all faxes which they are responsible for). Managers and users are receiving notifications by email about new faxes immediately they will reach. Users are able to forward faxes by email to anyone or only to a single email, which is allowed by manager. Managers can create, activate, deactivate, delete users. Top manager can do same with managers. Adam has a special focus on security and privateness of this service. In result all credentials are setting up by admins. What does it mean?! Managers are creating special storage backets in BackBlaze (it can be done directly from website during adding new fax-number) for each number. They are setting up their own email by Mailgun service (it's also automated and handling from website) which is solveing privacy problem of sending notification emails and emails with attached faxes. And the main thing is Twilio service, which is providing service of receiving and sending faxes. So, if you are in need of such service, don't hesitate to contact with Adam and ask for more details and, maybe, get some feedback about our team :)."
+        },
+        booking: {
+    		client: "Abdullah Alt",
+	        company: "ALT",
+            position: "Owner",
+            country: "Saudi Arabia",
+            city: "Riyadh",
+            url: "chatbotportfolion.000webhostapp.com",
+            url1: "https://chatbotportfolion.000webhostapp.com",
+            feedback: "",
+            description: "It's a SAAS project, which gives the users possibility to order event planning to the 3-rd party organization (including plane tickets, hotel booking, daily planning and coming event). The link below is a prototype of all mentioned services, that's why you are free to login with admin@gmail.com/123456 username/password and check some features and see whole UI/UX of project. The key thing of this service, from developing point of view, is that we did it in an unbelievable short period of time. Way2Up team decided to keep that time in secret, as hardly someone will believe that it's possible. So if you have idea, which you don't believe in it by yourself, tell us about it. We will make you believe and bring it to life. Have a good ideas, bye."
+        },
+        guard: {
+    		client: "Silvian Toe",
+	        company: "***",
+	        position: "CEO",
+            country: "France",
+            city: "Lion",
+            url: "iotsecure.xyz",
+            url1: "http://iotsecure.xyz",
+            feedback: "Way2Up delivered good work on time for a project that was quite complex. It's a pleasure to work with them. Thanks! Strong recommendations.",
+            description: ""
+        },
+        edukit: {
+    		client: "Aravind Venkataraman",
+	        company: "Edukit",
+	        position: "CEO",
+            country: "India",
+            city: "Bangalore",
+            url: "chemicallewis.000webhostapp.com",
+            url1: "http://chemicallewis.000webhostapp.com",
+            feedback: "",
+            description: "No feedback"
+        },
+        csgo: {
+    		client: "Damien Gensanne",
+	        company: "CsGoFrog",
+	        position: "Owner",
+            country: "France",
+            city: "Valence",
+            url: "csgofrog.com",
+            url1: "https://csgofrog.com",
+            feedback: "",
+            description: "Csgofroog, one of the most exciting project we have done. In each adult lives a child who likes games. It's a gamer's website. Users can deal with CS games stuff and attributes and won/lose them. Everything is fair and based on Probability theory. The interesting story about this project is that we were developing on it in state when site was fully functioning and responsibility of correct results was very high. No one gamer was injured during developing))). Even after release we time to time spending our lasure time there. Unfortunately we more often losing than wining, but it means that you have real more chance to win from us))) Have a good time."
+        },
+    }
 </script>
 </body>
 </html>
