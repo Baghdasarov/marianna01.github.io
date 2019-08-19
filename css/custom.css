@@ -191,9 +191,18 @@ button {
     background-image: linear-gradient(#5ca9ca, #214b5d);
 
 }
-
+.red-way2up{
+    text-transform: uppercase;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#db2818, #791714);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .counter-icon{
     line-height: 115px;
+}
+.counter-item {
+    cursor: context-menu;
 }
 
 #particles-js{
@@ -232,16 +241,19 @@ button {
     font-size: 30px;
     position: absolute;
     bottom: 15px;
-    right: 15px;
+    right: 10px;
 }
 .portfolio .item-img-overlay .liveProject {
     font-size: 30px;
     position: absolute;
     bottom: 15px;
-    right: 60px;
+    right: 50px;
 }
 .portfolio .item-img-overlay .description {
-    right: 95px;
+    font-size: 30px;
+    position: absolute;
+    bottom: 18px;
+    right: 85px;
 }
 .red-list li::before {
     content: "\2022";
@@ -251,6 +263,7 @@ button {
     width: 1em;
     margin-left: -1em;
 }
+
 #foot{
     /*border-bottom: 3px solid rgb(203, 52, 43);*/
     background-color: #214b5d;
