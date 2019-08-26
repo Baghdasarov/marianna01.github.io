@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
 }
+a {
+    color: inherit;
+}
 a:hover, a:active {
     color: #214b5d;
 }
@@ -267,9 +270,6 @@ button {
 #foot{
     /*border-bottom: 3px solid rgb(203, 52, 43);*/
     background-color: #214b5d;
-}
-.footer-nav a {
-    margin-right: 10px;
 }
 @media (max-width: 1024px){
     .navbar-fixed-top {

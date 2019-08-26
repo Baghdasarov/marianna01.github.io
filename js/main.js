@@ -1,15 +1,19 @@
 $(window).on('load', function () {
+    var year = new Date().getFullYear();
+    $(".year").text(year);
     // open page scrolled up to bottom
     $('html, body').animate({
         scrollTop: $(document).height()
-    }, 500);
+    }, 1, function() {
+        setTimeout(function () {
+            $("#loader").fadeOut("slow");
+        }, 500);
+    });
     /* ===================================
      Loading Timeout
      ====================================== */
 
-    setTimeout(function () {
-        $("#loader").fadeOut("slow");
-    }, 500);
+
 
     // $('body').bind('mousewheel', function(e){
     //     console.log(e.originalEvent);
