@@ -696,6 +696,15 @@
 		        $("#currentSong").attr("href", res)
 	        }
         });
+        $("#currentSong").click(function() {
+	        $.ajax({
+		        type:"post",
+		        url:"youtube.php",
+		        success: function(res) {
+			        $("#currentSong").attr("href", res)
+		        }
+	        });
+        })
     </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.appear.min.js"></script>

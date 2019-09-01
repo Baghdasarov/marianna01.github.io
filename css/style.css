@@ -293,12 +293,11 @@ Google Font
 .p-text {
     padding: 0;
     font-size: 30px;
-    color: #b1b1b1;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     height: 100%;
     line-height: 35px;
-    text-align: right;
+    text-align: left;
 }
 
 .progress {
@@ -397,16 +396,16 @@ Google Font
 /* team-two- */
 .team-two-tag{
     position: absolute;
+    width: 80%;
     bottom: 10%;
     left: 10%;
     background: #fff;
-    padding: 15px;
-    width:200px;
+    padding: 12px;
     overflow: hidden;
-    transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
+    transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    -o-transition: all 0.8s linear;
+    -webkit-transition: all 0.8s linear;
 }
 
 .team-box:hover .team-two-tag{
@@ -418,18 +417,19 @@ Google Font
 }
 
 .team-two-social {
-    display: none;
     position: absolute;
-    left: 200px;
-    bottom:-40px;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    color: #fff;
+    font-weight: bolder;
 }
 .team-box:hover .team-two-social{
-    display: inline-block;
-    bottom:auto;
-    transition: all 1.3s linear;
-    -moz-transition: all 1.3s linear;
-    -o-transition: all 1.3s linear;
-    -webkit-transition: all 1.3s linear;
+    color: #cb342b;
+    transition: all .8s linear;
+    -moz-transition: all .8s linear;
+    -o-transition: all .8s linear;
+    -webkit-transition: all .8s linear;
 
 }
 
@@ -1021,7 +1021,7 @@ Google Font
     border: 2px solid #00abc9;
 }
 
-.blog-item .padding-20px-lr {
+.blog-item .padding-20px-lr, .padding-20px-l {
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
@@ -3733,15 +3733,15 @@ background: url(../images/blog-cover1.jpg );
     .testimonial-two-bg{
         height: 335px;
     }
-    .team-two-tag{
-        width: 80%;
-    }
-    .team-box .team-two-social {
-        display: inline-block;
-        bottom: auto;
-        position: relative;
-        left: auto;
-    }
+    /*.team-two-tag{*/
+        /*width: 80%;*/
+    /*}*/
+    /*.team-box .team-two-social {*/
+        /*display: inline-block;*/
+        /*bottom: auto;*/
+        /*position: relative;*/
+        /*left: auto;*/
+    /*}*/
     .team-three-tag{
         left: 10%;
         width: 66%;
