@@ -3830,7 +3830,11 @@ background: url(../images/blog-cover1.jpg );
 @media screen and (max-width: 500px) {
     .header-searchbar {
         padding-left: 0px;
-        margin-left: -15px;}
+        margin-left: -15px;
+    }
+    .p-text {
+        font-size: 19px !important;
+    }
 }
 
 

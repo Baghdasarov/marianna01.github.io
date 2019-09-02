@@ -42,6 +42,10 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/custom.css"/>
     <style>
+        .team>div {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
         @media (max-width: 1199px) {
             h6 {
                 font-size: 19px;
@@ -59,6 +63,9 @@
                 margin: auto !important;
                 padding-left: 0 !important;
                 padding-right: 0 !important;
+            }
+            .counts .p-text {
+                text-align: right !important;
             }
         }
     </style>
@@ -192,13 +199,11 @@
                                     <hr class="seperator-two">
                                     <hr class="seperator-one">
                                 </div>
-                                <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">Maecenas ut lectus
-                                                                                                                  a ipsum gravida ornare. Cras scelerisque in mauris id pretium.
-                                                                                                                  Praesent convallis neque quis erat lobortis gravida id et dolor.</p>
+                                <p class="width-75 margin-lr-auto md-width-90 xs-width-100 xs-margin-30px-bottom">This is the most power that <span class="red-way2up">Way2Up</span> has. We are the ones who creating <span class="red-way2up">Way2Up</span>, becoming part of it and making our future. If you like what we do and, more important, how we do it, than join us. Give us opportunity to work for your future also and you will make sure that we treat your future as with our own.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row" style="margin-bottom: 30px;">
+                    <div class="team row" style="margin-bottom: 30px;">
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="team-box sm-margin-30px-bottom xs-margin-30px-bottom">
                                 <div class="team-image">
@@ -221,7 +226,7 @@
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="team-box sm-margin-30px-bottom xs-margin-30px-bottom">
                                 <div class="team-image">
-                                    <img src="images/ninja.png" alt="image">
+                                    <img src="images/ninja.gif" alt="image">
                                 </div>
                                 <div class="team-two-tag">
                                     <div class="team-two-text display-inline float-left text-left">
@@ -234,7 +239,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="team-box sm-margin-30px-bottom xs-margin-30px-bottom">
                                 <div class="team-image">
                                     <img src="images/constructor-team-three.jpg" alt="image">
@@ -250,8 +255,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row" style="margin-bottom: 30px;">
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="team-box sm-margin-30px-bottom xs-margin-30px-bottom">
                                 <div class="team-image">
@@ -284,7 +287,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="team-box sm-margin-30px-bottom xs-margin-30px-bottom">
                                 <div class="team-image">
                                     <img src="images/team-three.jpg" alt="image">
@@ -300,8 +303,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
                             <div class="team-box sm-margin-30px-bottom xs-margin-30px-bottom">
                                 <div class="team-image">
@@ -361,7 +362,7 @@
                                             <div class="col-xs-6 col-md-8 p-text">
                                                 <span>Team members</span>
                                             </div>
-                                            <div class="col-xs-6 col-md-4 no-padding-right">
+                                            <div class="counts col-xs-6 col-md-4 no-padding-right">
                                                 <p id="teamMembers" class="text-extra-dark-gray text-medium p-text text-green"></p>
                                             </div>
                                         </div>
@@ -369,7 +370,7 @@
                                             <div class="col-xs-6 col-md-8 p-text">
                                                 <span>Worked hours</span>
                                             </div>
-                                            <div class="col-xs-6 col-md-4 no-padding-right">
+                                            <div class="counts col-xs-6 col-md-4 no-padding-right">
                                                 <p id="workedHours" class="text-extra-dark-gray text-medium p-text text-green"></p>
                                             </div>
                                         </div>
@@ -377,7 +378,7 @@
                                             <div class="col-xs-6 col-md-8 p-text">
                                                 <span>Lines of code</span>
                                             </div>
-                                            <div class="col-xs-6 col-md-4 no-padding-right">
+                                            <div class="counts col-xs-6 col-md-4 no-padding-right">
                                                 <p id="linesOfCode" class="text-extra-dark-gray text-medium p-text text-green"></p>
                                             </div>
                                         </div>
@@ -385,7 +386,7 @@
                                             <div class="col-xs-6 col-md-8 p-text">
                                                 <span>Happy Clients</span>
                                             </div>
-                                            <div class="col-xs-6 col-md-4 no-padding-right">
+                                            <div class="counts col-xs-6 col-md-4 no-padding-right">
                                                 <p id="happyClients" class="text-extra-dark-gray text-medium p-text text-green"></p>
                                             </div>
                                         </div>
@@ -393,7 +394,7 @@
                                             <div class="col-xs-6 col-md-8 p-text">
                                                 <span>Time of fun</span>
                                             </div>
-                                            <div class="col-xs-6 col-md-4 no-padding-right">
+                                            <div class="counts col-xs-6 col-md-4 no-padding-right">
                                                 <p id="timeOfFun" class="text-extra-dark-gray text-medium p-text text-green"></p>
                                             </div>
                                         </div>
