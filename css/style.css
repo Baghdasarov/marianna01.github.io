@@ -3563,6 +3563,16 @@ background: url(../images/blog-cover1.jpg );
     background-repeat: no-repeat;
     background-position: center center;
 }
+/*iOS fixes*/
+.ios #showMenu {
+    top: calc(100vh - 74px) !important;
+}
+header.ios nav.nav-box-width {
+    padding: 15px 0 45px !important
+}
+.ios .navbar-fixed-top {
+    top: calc(100vh - 84px);
+}
 /* Meadia Quries */
 
 @media screen and (max-width: 991px) {
