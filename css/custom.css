@@ -112,7 +112,6 @@ button {
 
 /*Background*/
 .about-cover{
-    background: url(../images/cover-about.jpg) center;
     background-size: cover;
 }
 .service-cover{
