@@ -5,7 +5,7 @@ $(window).on('load', function () {
     $("#project-slide-five").css("background", "url('images/project-slide-five.jpg') center");
     $("#project-slide-three").css("background", "url('images/project-slide-three.jpg') center");
     $("#perspective").css("background-image", "url('images/cover-about.jpg')");
-    $(".bg").css("background-image", "url('images/cover-about.jpg')");
+    // $(".bg").css("background-image", "url('images/cover-about.jpg')");
     var year = new Date().getFullYear();
     $(".year").text(year);
     // open page scrolled up to bottom

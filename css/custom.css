@@ -7,6 +7,9 @@ a {
 a:hover, a:active {
     color: #214b5d;
 }
+.alt-font {
+    font-family: 'Pacifico', cursive;
+}
 .btn{
     font-weight: bold;
 }
@@ -138,7 +141,10 @@ button {
     background: url(../images/cover-blog.jpg) bottom;
     background-size: cover;
 }
-.contact-cover{
+.career-cover{
+    background: url(../images/cover-contact.jpg) center top;
+    background-size: cover;
+}.contact-cover{
     background: url(../images/cover-contact.jpg) center;
     background-size: cover;
 }
@@ -238,6 +244,18 @@ button {
 .contact-form input:focus, .contact-form textarea:focus {
     border-bottom: 1px solid #6cbd52;
 }
+.team-box .team-image{
+    border-radius: 5px;
+}
+.team-two-social{
+    right: 10px;
+    bottom: 2px;
+}
+.team-two-tag{
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
 
 .portfolio .item-img-overlay .viewProject {
     font-size: 30px;
@@ -270,6 +288,21 @@ button {
     /*border-bottom: 3px solid rgb(203, 52, 43);*/
     background-color: #214b5d;
 }
+.footer-social a{
+    margin: 10px;
+}
+.contact-page-form .contact-form input,
+.contact-page-form .contact-form textarea {
+    border: none;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0 0 10px 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+}
+
 @media (max-width: 1024px){
     .navbar-fixed-top {
         top: calc(100vh - 54px);
