@@ -58,9 +58,29 @@ section {
     top: calc(100vh - 40px);
 }
 .scroll-top-arrow, .scroll-top-arrow:focus {
-    top: 30px;
+    top: 120px;
+    font-size: 40px;
+    height: 45px;
+    width: 45px;
+    right: 25px;
 }
-
+/*Scroll*/
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
 /*Landing button*/
 button {
     background: transparent;
@@ -234,13 +254,6 @@ button {
     line-height: 28px;
 }
 
-.scroll-top-arrow, .scroll-top-arrow:focus {
-    font-size: 40px;
-    height: 45px;
-    width: 45px;
-    right: 25px;
-}
-
 .contact-form input:focus, .contact-form textarea:focus {
     border-bottom: 1px solid #6cbd52;
 }
@@ -289,7 +302,7 @@ button {
     background-color: #214b5d;
 }
 .footer-social a{
-    margin: 10px;
+    margin: 2px 10px 4px;
 }
 .contact-page-form .contact-form input,
 .contact-page-form .contact-form textarea {

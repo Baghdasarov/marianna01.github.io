@@ -1,11 +1,11 @@
 $(window).on('load', function () {
-    $("#project-slide-one").css("background", "url('images/project-slide-one.jpg') center");
-    $("#project-slide-two").css("background", "url('images/project-slide-two.jpg') center");
-    $("#project-slide-four").css("background", "url('images/project-slide-four.jpg') center");
-    $("#project-slide-five").css("background", "url('images/project-slide-five.jpg') center");
-    $("#project-slide-three").css("background", "url('images/project-slide-three.jpg') center");
+    // $("#project-slide-one").css("background", "url('images/project-slide-one.jpg') center");
+    // $("#project-slide-two").css("background", "url('images/project-slide-two.jpg') center");
+    // $("#project-slide-four").css("background", "url('images/project-slide-four.jpg') center");
+    // $("#project-slide-five").css("background", "url('images/project-slide-five.jpg') center");
+    // $("#project-slide-three").css("background", "url('images/project-slide-three.jpg') center");
     $("#perspective").css("background-image", "url('images/cover-about.jpg')");
-    // $(".bg").css("background-image", "url('images/cover-about.jpg')");
+    $(".about-cover").css("background-image", "url('images/cover-about.jpg')");
     var year = new Date().getFullYear();
     $(".year").text(year);
     // open page scrolled up to bottom

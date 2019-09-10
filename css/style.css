@@ -129,7 +129,21 @@ Google Font
     width: 300px;
     height: 300px;
 }
-
+#project-slide-one {
+    background: url('../images/project-slide-one.jpg') center;
+}
+#project-slide-two {
+    background: url('../images/project-slide-two.jpg') center;
+}
+#project-slide-four {
+    background: url('../images/project-slide-four.jpg') center;
+}
+#project-slide-five {
+    background: url('../images/project-slide-five.jpg') center;
+}
+#project-slide-three {
+    background: url('../images/project-slide-three.jpg') center;
+}
 .morphext > .animated {
     display: inline-block;
 }
@@ -285,10 +299,6 @@ Google Font
 }
 
 /*team section */
-
-.team-quote p {
-    max-width: 500px;
-}
 
 .p-text {
     padding: 0;
@@ -3574,6 +3584,14 @@ header.ios nav.nav-box-width {
 }
 /* Meadia Quries */
 
+@media screen and (min-width: 992px) {
+    .text-left-lg {
+        text-align: left !important;
+    }
+    .text-right-lg {
+        text-align: right !important;
+    }
+}
 @media screen and (max-width: 991px) {
 
     .top-header-area{
