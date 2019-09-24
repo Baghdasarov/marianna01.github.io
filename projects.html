@@ -299,14 +299,20 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <a href="" target="_blank" class="modal-title h4" id="url" rel="nofollow"></a>
+<!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                    <a href="" target="_blank" class="modal-title h3 font-weight-600 text-uppercase text-green" id="url" rel="nofollow"></a>
                 </div>
                 <div class="modal-body">
-                    <p class="no-margin-top no-margin-bottom font-weight-400 text-medium-gray">Company: <span id="company"></span></p>
-                    <p class="no-margin-top no-margin-bottom font-weight-400 text-medium-gray">Contact Person: <span id="contactPerson"></span></p>
-                    <p class="no-margin-top no-margin-bottom font-weight-400 text-medium-gray">Place: <span id="place"></span></p>
-                    <p class="no-margin-bottom font-weight-400 text-medium-gray" id="description"></p>
+                    <p class="no-margin-top margin-5px-bottom font-weight-400 text-medium-darkgray"> <i class="fa fa-building"></i>
+                        Company: <span class="font-weight-600" id="company"></span></p>
+                    <p class="no-margin-top margin-5px-bottom font-weight-400 text-medium-darkgray"> <i class="fa fa-user"></i>
+                        Contact Person: <span class="font-weight-600" id="contactPerson"></span></p>
+                    <p class="no-margin-top margin-5px-bottom font-weight-400 text-medium-darkgray"> <i class="fa fa-globe"></i>
+                         Place: <span class="font-weight-600" id="place"></span></p>
+                    <p class="margin-5px-bottom font-weight-400 text-medium-darkgray" id="description"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-rounded btn-red btn-very-small" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
