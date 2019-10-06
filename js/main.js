@@ -651,24 +651,25 @@ jQuery(function ($) {
 		 Mail Sender
    ==============================================================*/
 
-$("#contact").on("submit", function (e) {
+$("#contact-form").on("submit", function (e) {
     e.preventDefault();
     var data = {
         name: $("#name").val(),
         email: $("#email").val(),
         text: $("#text").val()
     };
-    console.log(data);
     $.ajax({
         type:"post",
         url:"mail.php",
         data: data,
         success: function(res) {
-            console.log(res)
-            if (res == true)
+            console.log(res);
+            if (res == true) {
+                $("#contact-form")[0].reset()
                 $('#email').val('Thank you!');
-            else
+            } else {
                 alert('Sorry, please try again');
+            }
         },
         error: function (err) {
             console.log(err);
